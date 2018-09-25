@@ -12,7 +12,7 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'font-awesome/css/font-awesome.css'
 
 import Buefy from 'buefy'
-import 'buefy/lib/buefy.css'
+import 'buefy/dist/buefy.css'
 
 Vue.config.productionTip = false
 
@@ -25,8 +25,8 @@ Vue.use(Vuetify, {
   // iconfont: 'fa'
 })
 
-// Vue.use(Buefy)
-Vue.component(Buefy.Table.name, Buefy.Table)
+Vue.use(Buefy)
+// Vue.component(Buefy.Table.name, Buefy.Table)
 
 sync(store, router, { moduleName: 'route' })
 router.beforeEach((to, from, next) => {
