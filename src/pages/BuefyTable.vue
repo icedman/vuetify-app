@@ -1,5 +1,6 @@
 <template>
 <div class="ml-2 mr-2 mt-2">
+  <!-- TODO: remove buefy -->
   <b-table :data="data" :columns="columns"></b-table>
   <form>
     <v-text-field
@@ -44,6 +45,12 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+Vue.use(Buefy)
+// Vue.component(Buefy.Table.name, Buefy.Table)
+
 export default {
   data () {
     return {
