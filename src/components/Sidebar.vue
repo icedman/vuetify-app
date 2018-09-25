@@ -67,8 +67,8 @@ export default {
   },
   mounted () {
     this.items = [
-      { icon: 'contacts', text: 'Contacts', action: () => { this.$router.push('/login') } },
-      { icon: 'history', text: 'Frequently contacted', action: () => { this.$router.push('/page1') } },
+      { icon: 'contacts', text: 'Login (Full Page)', action: () => { this.$router.push('/login') } },
+      { icon: 'history', text: 'Buefy Table (Header)', action: () => { this.$router.push('/page1') } },
       { icon: 'content_copy', text: 'Duplicates', action: () => { this.$router.push('/') } },
       {
         icon: 'keyboard_arrow_up',
